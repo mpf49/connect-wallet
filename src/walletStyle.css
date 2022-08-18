@@ -1,0 +1,10 @@
+.walletCard {color: chocolate;}
+.MetaBtn {
+        background-color: #d58121; 
+        border: none;
+        color: rgb(255, 255, 255);
+        padding: 30px 55px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 30px;}
