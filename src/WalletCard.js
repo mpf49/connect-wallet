@@ -8,6 +8,17 @@ const WalletCard = () => {
 	const [defaultAccount, setDefaultAccount] = useState(null);
 	const [userBalance, setUserBalance] = useState(null);
 	const [connButtonText, setConnButtonText] = useState('Connect Wallet');
+	const targetNetworkId = '0x3';
+
+
+	const checkNetwork = async () => {
+		if (window.ethereum) {
+		  const currentChainId = await window.ethereum.request({
+			method: 'eth_chainId',
+			if (currentChainId = targetNetworkId) {return true;}
+		})
+		  }}
+
 
 	const connectWalletHandler = () => {
 		if (window.ethereum && window.ethereum.isMetaMask) {
@@ -29,6 +40,7 @@ const WalletCard = () => {
 			setErrorMessage('Please install MetaMask browser extension to interact');
 		}
 	}
+
 
 	
 	const accountChangedHandler = (newAccount) => {
