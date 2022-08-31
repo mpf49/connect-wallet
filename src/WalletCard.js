@@ -74,10 +74,10 @@ const WalletCard = () => {
 		<h4> {"Metamask Wallet"} </h4>
 			<button className='MetaBtn' onClick={connectWalletHandler}>{connButtonText}</button>
 			<div className='accountDisplay'>
-				<h3>Address: {defaultAccount}</h3>
+				<h5>Address: {defaultAccount}</h5>
 			</div>
 			<div className='balanceDisplay'>
-				<h3>Balance: {userBalance}</h3>
+				<h5>Balance: {userBalance}</h5>
 			</div>
 			{errorMessage}
 		</div>
